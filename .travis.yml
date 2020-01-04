@@ -6,4 +6,4 @@ before_install:
   - docker build -t deepcodersinc/docker-react -f Dockerfile.dev .
 
 script:
-  - ocker run deepcodersinc/docker-react npm run test -- --coverage
+  - docker run deepcodersinc/docker-react npm run test -- --coverage
